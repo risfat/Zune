@@ -1,0 +1,81 @@
+name: zune
+description: Flutter app that integrates TensorFlow Object Detection
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.5
+  camera: ^0.9.8+1
+  tflite_flutter: ^0.9.0
+  tflite_flutter_helper:
+    git:
+      url: https://github.com/elephantum/tflite_flutter_helper.git
+      ref: a7d7a59a33f7cffa0a2a12ab05625807622cc97a
+  image: ^3.2.0
+  path_provider: ^2.0.11
+  image_picker: ^0.8.5+3
+
+  flutter_native_splash: ^2.2.11
+  provider: ^6.0.2
+  oktoast: ^3.2.0
+  auto_size_text: ^3.0.0
+  google_fonts: ^3.0.1
+  animations: ^2.0.7
+  connectivity_plus: ^2.2.1
+  palestine_console: ^0.0.10
+  flutter_config: ^2.0.0
+
+
+  animated_bottom_navigation_bar: ^1.1.0
+
+  hive_flutter: ^1.1.0
+  hive: ^2.0.6
+  flutter_animated_dialog: ^2.0.1
+  google_static_maps_controller: ^1.0.0
+  geolocator: ^9.0.2
+  geocoding: ^2.0.5
+  permission_handler: ^10.2.0
+  share_plus: ^4.5.3
+  url_launcher: ^6.1.6
+  cached_network_image: ^3.2.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: "^0.10.0"
+  flutter_lints: ^2.0.1
+  build_runner: ^2.1.7
+  hive_generator: ^1.1.2
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/launcher_icon/icon.png"
+  adaptive_icon_background: "#292828"
+  adaptive_icon_foreground: "assets/launcher_icon/foreground.png"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - .env
+
+
+  fonts:
+    - family: AppIcons
+      fonts:
+        - asset: assets/fonts/AppIcons.ttf
